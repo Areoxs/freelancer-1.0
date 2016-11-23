@@ -1,6 +1,6 @@
 
 body {
-    font-family: "OpenSansRegular", Arial, Verdana, "MyriadProRegular" sans-serif;
+    font-family: "OpenSansRegular", Arial, Verdana, "MyriadProRegular", sans-serif;
     font-size: 14px;
     background-color: #fff;
     color: #314a5b;
@@ -16,8 +16,13 @@ body {
 }
 
 .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -41,6 +46,7 @@ body {
     font-family: "MontserratRegular";
     color: #263742;
     margin-left: 20px;
+     -webkit-transition: all .3s;
     transition: all .3s;
 }
 
@@ -57,8 +63,15 @@ body {
 .social_btn {
     color: #fa5c65;
     margin-left: 23px;
+     -webkit-transition: all .2s;
+    transition: all .2s;
+    outline:none;
 }
-
+.social_btn:hover,.social_btn:focus{
+    color:#ff3936;
+     -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
 .text_content {
     margin: 280px auto 0;
 }
@@ -71,7 +84,7 @@ body {
     color: #314a5b;
 }
 
-.text_wrap h1 span {
+.red_dot {
     color: #fa5c65;
 }
 
@@ -89,11 +102,15 @@ body {
     border-radius: 5px;
     background-color: #fa5c65;
     text-transform: uppercase;
+     -webkit-transition: all .2s;
     transition: all .2s;
 }
 
 .main_btn:hover {
     color: #fff;
     text-decoration: none;
-    background-color: #ff2936;
+    background-color: #ff3936;
+}
+.img_wrap img{
+    max-width: 100%;
 }
