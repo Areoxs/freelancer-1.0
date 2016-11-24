@@ -1,4 +1,3 @@
-
 body {
     font-family: "OpenSansRegular", Arial, Verdana, "MyriadProRegular", sans-serif;
     font-size: 14px;
@@ -46,7 +45,7 @@ body {
     font-family: "MontserratRegular";
     color: #263742;
     margin-left: 20px;
-     -webkit-transition: all .3s;
+    -webkit-transition: all .3s;
     transition: all .3s;
 }
 
@@ -63,21 +62,24 @@ body {
 .social_btn {
     color: #fa5c65;
     margin-left: 23px;
-     -webkit-transition: all .2s;
+    -webkit-transition: all .2s;
     transition: all .2s;
-    outline:none;
+    outline: none;
 }
-.social_btn:hover,.social_btn:focus{
-    color:#ff3936;
-     -webkit-transform: scale(1.05);
+
+.social_btn:hover,
+.social_btn:focus {
+    color: #ff3936;
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
+
 .text_content {
     margin: 280px auto 0;
 }
 
 .text_wrap h1 {
-    font-family: MontserratBold;
+    font-family: "MontserratBold";
     line-height: 1.11;
     letter-spacing: -2px;
     text-transform: uppercase;
@@ -102,7 +104,7 @@ body {
     border-radius: 5px;
     background-color: #fa5c65;
     text-transform: uppercase;
-     -webkit-transition: all .2s;
+    -webkit-transition: all .2s;
     transition: all .2s;
 }
 
@@ -111,6 +113,66 @@ body {
     text-decoration: none;
     background-color: #ff3936;
 }
-.img_wrap img{
+
+.img_wrap img {
     max-width: 100%;
+}
+
+.work {
+    margin: 75px auto;
+}
+
+.work_itm {
+    padding: 10px;
+}
+
+.work_itm h2 {
+    font-family: "MontserratBold";
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.work_itm p,.portfolio_itm p {
+    font-family: "MyriadProRegular";
+    font-size: 15px;
+    font-stretch: normal;
+    line-height: 1.47;
+    color: #9aa0ab;
+    margin: 30px auto;
+}
+
+.main_link {
+    font-family: "MontserratRegular";
+    font-size: 14px;
+    color: #fa5c65;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    outline:none;
+}
+.main_link:hover,.main_link:focus{
+    text-decoration: underline;
+    color:#9aa0ab;
+}
+.main_link:after {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: -17px;
+    width: 11px;
+    height: 11px;
+    content: "";
+    background: url("../img/arrow.svg") no-repeat
+}
+.portfolio{
+    
+}
+.portfolio_itm h2{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #314a5b;
 }
