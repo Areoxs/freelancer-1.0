@@ -44,6 +44,7 @@ body {
     text-decoration: none;
     font-family: "MontserratRegular";
     color: #263742;
+    text-transform: uppercase;
     margin-left: 20px;
     -webkit-transition: all .3s;
     transition: all .3s;
@@ -132,7 +133,8 @@ body {
     text-transform: uppercase;
 }
 
-.work_itm p,.portfolio_itm p {
+.work_itm p,
+.portfolio_itm p {
     font-family: "MyriadProRegular";
     font-size: 15px;
     font-stretch: normal;
@@ -150,29 +152,104 @@ body {
     display: inline-block;
     -webkit-transition: all .2s;
     transition: all .2s;
-    outline:none;
+    outline: none;
 }
-.main_link:hover,.main_link:focus{
-    text-decoration: underline;
-    color:#9aa0ab;
-}
-.main_link:after {
-    display: block;
+
+.main_link i {
     position: absolute;
-    top: 5px;
-    right: -17px;
-    width: 11px;
-    height: 11px;
-    content: "";
-    background: url("../img/arrow.svg") no-repeat
+    top: 2.5px;
+    right: -15px;
 }
-.portfolio{
-    
+
+.main_link:hover,
+.main_link:focus {
+    text-decoration: underline;
+    color: #9aa0ab;
 }
-.portfolio_itm h2{
+
+.portfolio {
+    margin: 104px auto;
+}
+
+.portfolio_itm h2 {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
     font-size: 40px;
     color: #314a5b;
+}
+
+.portfolio_itm p:first-of-type {
+    margin: 17px auto;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #314a5b;
+}
+
+.portfolio_itm p:not(:first-of-type) {
+    margin: 15px auto;
+    font-size: 15px;
+    line-height: 1.47;
+    color: #9aa0ab;
+}
+
+.team_label h2 {
+    margin: 0;
+    padding: 0;
+    font-family: MontserratBold;
+    font-size: 32px;
+    color: #314a5b;
+    text-transform: uppercase;
+}
+
+.team_label p {
+    margin: 16px auto;
+    padding: 0;
+    font-size: 16px;
+    color: #9aa0ab;
+}
+
+.team_itm {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.team_itm h3 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    color: #314a5b;
+    font-size: 21.4px;
+}
+
+.team_itm .extra {
+    padding: 0;
+    margin: 11px auto;
+    font-family: "OpenSansBold";
+    font-size: 14px;
+    color: #f0454c;
+}
+
+.team_itm p {
+    font-size: 14px;
+    color: #9aa0ab;
+}
+
+footer {
+    margin: 30px auto 5px;
+    padding: 10px 0;
+    border-top: 1px solid rgba( 122, 122, 122, 0.302);
+}
+
+footer p {
+    font-family: OpenSans;
+    font-size: 13px;
+    text-align: right;
+}
+
+.second_color {
+    color: #b9c0c6;
 }
